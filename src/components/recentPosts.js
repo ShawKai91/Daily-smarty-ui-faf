@@ -38,10 +38,13 @@ class RecentPosts extends Component {
     }
 }
 
-RecentPosts = connect(state => { 
-    return {
-        recentPosts: state.posts.recentPosts
-    }
-}, actions)(RecentPosts)
+RecentPosts = connect(
+    state => { 
+        return {
+            recentPosts: state.posts.recentPosts
+        }
+    }, 
+    actions
+)(RecentPosts)
 
 export default RecentPosts
