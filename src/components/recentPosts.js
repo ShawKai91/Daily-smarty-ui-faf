@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { connect } from 'react-redux';
 
 import * as actions from '../actions';
@@ -32,7 +31,6 @@ class RecentPosts extends Component {
                         {this.renderPosts()}
                     </ul>
                 </div>
-
             </div>
         )
     }
@@ -40,9 +38,7 @@ class RecentPosts extends Component {
 
 RecentPosts = connect(
     state => { 
-        return {
-            recentPosts: state.posts.recentPosts
-        }
+        return { recentPosts: state.posts.recentPosts }
     }, 
     actions
 )(RecentPosts)
