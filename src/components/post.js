@@ -28,12 +28,8 @@ class Post extends Component {
             link = link.substring(n + 1, link.length);
         }    
 
-        if(link.includes('.html')) {
-            link = link.substring(0, link.length - 5);
-        }
-        if(link.includes('.htm')) {
-            link = link.substring(0, link.length - 4);
-        }
+        if(link.includes('.html')) { link = link.substring(0, link.length - 5); }
+        if(link.includes('.htm'))  { link = link.substring(0, link.length - 4); }
 
         return link;
     }
